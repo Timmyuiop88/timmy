@@ -16,6 +16,7 @@ import Projects from "./components/projects";
 import Exper from "./components/experience";
 import Skills from "./components/skills";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 export default function Home() {
   return (
     <Box bg={'#fefefe'}>
@@ -238,6 +239,7 @@ export default function Home() {
       <Exper/>
       <Skills/>
       <Contact/>
+      <Footer/>
     </Box>
   );
 }
