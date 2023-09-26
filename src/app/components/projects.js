@@ -192,7 +192,7 @@ export default function Projects() {
                 fontWeight={"700"}
                 color={"#DFDFDF"}
               >
-                01
+                02
                 <Text color={"#06D6A0"}>.</Text>
                 <Text
                   ml={"20px"}
@@ -289,7 +289,7 @@ export default function Projects() {
                 fontWeight={"700"}
                 color={"#DFDFDF"}
               >
-                01
+                03
                 <Text color={"#06D6A0"}>.</Text>
                 <Text
                   ml={"20px"}
@@ -346,7 +346,7 @@ export default function Projects() {
                 bg={"#ECEFF2"}
                 borderRadius={"35px"}
               >
-                PHP
+                REDUX
               </Text>
               <Text
                 fontSize={"24px"}
@@ -375,7 +375,7 @@ export default function Projects() {
             </Stack>
 
             <Box w={"330px"} h={"340px"} m={"auto"} pt={"20px"} pb={0}>
-           <Image m={'auto'} src={"/p1.png"} width="430" height={'300'} alt="Picture of the author"
+           <Image m={'auto'} src={"/p4.png"} width="430" height={'300'} alt="Picture of the author"
   />
             </Box>
             <Box mt={"0"} w={"full"} h={"auto"} px={"10px"}>
@@ -386,7 +386,7 @@ export default function Projects() {
                 fontWeight={"700"}
                 color={"#DFDFDF"}
               >
-                01
+                04
                 <Text color={"#06D6A0"}>.</Text>
                 <Text
                   ml={"20px"}
@@ -397,9 +397,9 @@ export default function Projects() {
                   color={"#121212"}
                   letterSpacing={"2px"}
                 >
-                  PROJECT NAME
+                  Movie App
                 </Text>
-                <Link href="https://google.com">
+                <Link href="https://hngstage2-rho.vercel.app/">
                   <IconButton
                     height={"60px"}
                     w={"60px"}
