@@ -139,7 +139,7 @@ export default function Exper() {
               <Text
                 ml={"20px"}
                 w={"189px"}
-                fontSize={["14px", "14px", "25px", "25px"]}
+                fontSize={["14px", "14px", "20px", "20px"]}
                 fontWeight={"400"}
                 lineHeight={"25px"}
                 color={"#121212"}
