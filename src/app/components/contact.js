@@ -17,8 +17,8 @@ import {
 export default function Contact() {
   return (
     <>
-      <Box w={"full"} h={"500px"}>
-        <Box pt={"10"}>
+      <Box w={"full"} h={"500px"} px={'20px'}>
+        <Box pt={"10"} >
           <Text
             textAlign={"center"}
             textTransform={"uppercase"}

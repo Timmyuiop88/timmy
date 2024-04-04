@@ -22,8 +22,8 @@ export default function Hero(){
         display={"flex"}
         justifyContent={"center"}
       >
-        <Box m={"auto"} w={"10%"} h={"300px"} bg={""} pt={"20"} pl={"10px"}>
-          <Box pl={'10px'} h={"auto"} w={"full"}>
+        <Box m={"auto"} w={"10%"} h={"auto"}pt={"20"} pl={"10px"}  >
+          <Box pl={'10px'} h={"auto"} w={"auto"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="49"
@@ -38,7 +38,7 @@ export default function Hero(){
             </svg>
           </Box>
         </Box>
-        <Box w={"90%"} h={"full"} bg={""}>
+        <Box w={"90%"} h={"full"} >
           <Center w={"full"} h={"auto"}>
             <Image src={"/hero.png"} width={236} height={236} />
           </Center>
@@ -166,7 +166,7 @@ display={'flex'}
           </Box>
         </Box>
 
-        <Box m={"auto"} w={"10%"} h={"full"} bg={""}>
+        <Box m={"auto"} w={"10%"} h={"full"} >
 
         <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
   <path d="M0 0L4.05271 3.55646C15.7513 13.8226 33.2487 13.8226 44.9473 3.55646L49 0L45.3718 4.18023C35.2541 15.8375 35.2541 33.1625 45.3718 44.8198L49 49L44.8198 45.3718C33.1625 35.2541 15.8375 35.2541 4.18023 45.3718L0 49L3.62816 44.8198C13.7459 33.1625 13.7459 15.8375 3.62816 4.18023L0 0Z" fill="#FFC700"/>

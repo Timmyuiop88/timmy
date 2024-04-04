@@ -15,7 +15,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/mukta": "^5.0.12",
     "framer-motion": "^10.16.4",
-    "next": "latest",
+    "next": "^14.1.4",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0"
