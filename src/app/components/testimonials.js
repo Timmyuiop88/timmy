@@ -1,6 +1,7 @@
-
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 import {
   Box,
   Button,
@@ -10,6 +11,9 @@ import {
   Stack,
   Avatar,
 } from "@chakra-ui/react";
+const imageLoader = ({ src, width, quality }) => {
+  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+}
 export default function Testimonial() {
   return (
     <Box w={"full"} h={"auto"} py={10}>
@@ -59,23 +63,18 @@ export default function Testimonial() {
           justifyContent={"space-between"}
           overflowX={"scroll"}
         >
-          
-
-
-          
           <Box
             mr={"10px"}
             minW={"300px"}
-            h={"auto"}
+            h={"250px"}
             w={"300px"}
-            bg={"white"}
             borderRadius={"20px"}
             border={"1px solid #999"}
             p={"20px"}
             position={"relative"}
           >
             <Box
-              bottom={"180px"}
+              bottom={"150px"}
               left={"245px"}
               position={"absolute"}
               zIndex={"999"}
@@ -131,28 +130,17 @@ export default function Testimonial() {
                 <Text>CSS</Text>
               </Box>
             </Box>
-            <Box
-              w={"full"}
-              height={"auto"}
-            
-              border={"1px solid #999"}
-            >
+            <Box w={"256"} height={"124"} border={"1px solid #999"}>
               <Image
+            
                 src={"/pr1.png"}
                 height={"200"}
                 width={"300"}
                 alt="project thumbnail"
               />
             </Box>
-            <Box
-              px={'10px'}
-              w={'full'}
-              h={'10'}
-             
-              display={'flex'}
-              >
-
-<Heading
+            <Box px={"10px"} w={"full"} h={"10"} display={"flex"}>
+              <Heading
                 mr={"10px"}
                 fontSize={"30px"}
                 display={"flex"}
@@ -163,37 +151,39 @@ export default function Testimonial() {
                   .
                 </Text>
               </Heading>
-
-                <Text
-              mt={"20px"}
-              fontSize={"18px"}
-              display={"flex"}
-              alignItems={"flex-end"}
-              
-            >
               <a href="https://givaavv1.vercel.app/">
-              GIVAA 1.0
-                </a>
-</Text>
-
-              </Box>
-            
+                <Text
+                  mt={"5px"}
+                  fontSize={"18px"}
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  color={"#08d6a0"}
+                >
+                  GIVAA 1.0 <FaExternalLinkAlt />
+                </Text>
+              </a>
+            </Box>
           </Box>
 
-    
+
+
+
+
+          
+
           <Box
             mr={"10px"}
             minW={"300px"}
-            h={"auto"}
+            h={"250px"}
             w={"300px"}
-            bg={"white"}
             borderRadius={"20px"}
             border={"1px solid #999"}
             p={"20px"}
             position={"relative"}
           >
             <Box
-              bottom={"180px"}
+              bottom={"150px"}
               left={"245px"}
               position={"absolute"}
               zIndex={"999"}
@@ -249,12 +239,7 @@ export default function Testimonial() {
                 <Text>CSS</Text>
               </Box>
             </Box>
-            <Box
-              w={"full"}
-              height={"auto"}
-          
-              border={"1px solid #999"}
-            >
+            <Box w={"256"} height={"124"} border={"1px solid #999"}>
               <Image
                 src={"/pr2.png"}
                 height={"200"}
@@ -262,11 +247,11 @@ export default function Testimonial() {
                 alt="project thumbnail"
               />
             </Box>
-            <Text
-              mt={"20px"}
+            <Box
+            
               fontSize={"18px"}
               display={"flex"}
-              alignItems={"flex-end"}
+              alignItems={"center"}
             >
               <Heading
                 mr={"10px"}
@@ -279,23 +264,29 @@ export default function Testimonial() {
                   .
                 </Text>
               </Heading>
-              <Text mb={"5px"}>
-                
-                
+
+
+
               <a href="https://giv-one.vercel.app/">
-              GIVAA 2.0
-                </a>
-               </Text>
-            </Text>
+                <Text
+                  mt={"5px"}
+                  fontSize={"18px"}
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  color={"#08d6a0"}
+                >
+                  GIVAA 2.0 <FaExternalLinkAlt />
+                </Text>
+              </a>
+
+            </Box>
           </Box>
 
-
-
-              
           <Box
             mr={"10px"}
             minW={"300px"}
-            h={"auto"}
+            h={"250px"}
             w={"300px"}
             bg={"white"}
             borderRadius={"20px"}
@@ -304,7 +295,7 @@ export default function Testimonial() {
             position={"relative"}
           >
             <Box
-              bottom={"180px"}
+              bottom={"150px"}
               left={"245px"}
               position={"absolute"}
               zIndex={"999"}
@@ -360,12 +351,7 @@ export default function Testimonial() {
                 <Text>Rapid API</Text>
               </Box>
             </Box>
-            <Box
-              w={"full"}
-              height={"auto"}
-          
-              border={"1px solid #999"}
-            >
+            <Box w={"256"} height={"124"} border={"1px solid #999"}>
               <Image
                 src={"/pr3.png"}
                 height={"200"}
@@ -373,11 +359,11 @@ export default function Testimonial() {
                 alt="project thumbnail"
               />
             </Box>
-            <Text
-              mt={"20px"}
+            <Box
+             
               fontSize={"18px"}
               display={"flex"}
-              alignItems={"flex-end"}
+              alignItems={"center"}
             >
               <Heading
                 mr={"10px"}
@@ -390,18 +376,28 @@ export default function Testimonial() {
                   .
                 </Text>
               </Heading>
-              <Text mb={"5px"}>
-                <a href="https://hngstage2-rho.vercel.app/"> 
-                MOVIE APP
-                </a>
-               </Text>
-            </Text>
+            <a href="https://hngstage2-rho.vercel.app/">
+                <Text
+                  mt={"5px"}
+                  fontSize={"18px"}
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  color={"#08d6a0"}
+                >
+                  MOVIE APP <FaExternalLinkAlt />
+                </Text>
+              </a>
+
+              
+              
+            </Box>
           </Box>
 
           <Box
             mr={"10px"}
             minW={"300px"}
-            h={"auto"}
+            h={"250px"}
             w={"300px"}
             bg={"white"}
             borderRadius={"20px"}
@@ -410,7 +406,7 @@ export default function Testimonial() {
             position={"relative"}
           >
             <Box
-              bottom={"180px"}
+              bottom={"150px"}
               left={"245px"}
               position={"absolute"}
               zIndex={"999"}
@@ -452,7 +448,7 @@ export default function Testimonial() {
               >
                 <Text>Node.Js</Text>
               </Box>
-              
+
               <Box
                 height={"auto"}
                 width={"auto"}
@@ -467,12 +463,8 @@ export default function Testimonial() {
                 <Text>Postman</Text>
               </Box>
             </Box>
-            <Box
-              w={"full"}
-              height={"auto"}
-          
-              border={"1px solid #999"}
-            >
+            <Box w={"256"} height={"124"} border={"1px solid #999"}>
+
               <Image
                 src={"/pr4.png"}
                 height={"200"}
@@ -480,11 +472,11 @@ export default function Testimonial() {
                 alt="project thumbnail"
               />
             </Box>
-            <Text
-              mt={"20px"}
+            <Box
+            
               fontSize={"18px"}
               display={"flex"}
-              alignItems={"flex-end"}
+              alignItems={"center"}
             >
               <Heading
                 mr={"10px"}
@@ -497,20 +489,28 @@ export default function Testimonial() {
                   .
                 </Text>
               </Heading>
-              <Text mb={"5px"}>
-                <a href="https://email-git-main-timmyuiop88.vercel.app/">
-                    EMAIL SERVICE
-                </a>
-              </Text>
-            </Text>
+    <a href="https://email-git-main-timmyuiop88.vercel.app/">
+                <Text
+                  mt={"5px"}
+                  fontSize={"18px"}
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  color={"#08d6a0"}
+                >
+                   EMAIL SERVICE <FaExternalLinkAlt />
+                </Text>
+              </a>
+
+
+             
+            </Box>
           </Box>
-
-
 
           <Box
             mr={"10px"}
             minW={"300px"}
-            h={"auto"}
+            h={"250px"}
             w={"300px"}
             bg={"white"}
             borderRadius={"20px"}
@@ -519,7 +519,7 @@ export default function Testimonial() {
             position={"relative"}
           >
             <Box
-              bottom={"180px"}
+              bottom={"150px"}
               left={"245px"}
               position={"absolute"}
               zIndex={"999"}
@@ -575,12 +575,8 @@ export default function Testimonial() {
                 <Text>SEO</Text>
               </Box>
             </Box>
-            <Box
-              w={"full"}
-              height={"auto"}
-          
-              border={"1px solid #999"}
-            >
+            <Box w={"256"} height={"124"} border={"1px solid #999"}>
+
               <Image
                 src={"/pr5.png"}
                 height={"200"}
@@ -588,11 +584,11 @@ export default function Testimonial() {
                 alt="project thumbnail"
               />
             </Box>
-            <Text
-              mt={"20px"}
+            <Box
+            
               fontSize={"18px"}
               display={"flex"}
-              alignItems={"flex-end"}
+              alignItems={"center"}
             >
               <Heading
                 mr={"10px"}
@@ -605,18 +601,28 @@ export default function Testimonial() {
                   .
                 </Text>
               </Heading>
-              <Text mb={"5px"}>
-                <a href="https://drkautopads.com/">
-                DRK AUTOPADS STORE
-                </a>
-              </Text>
-            </Text>
+
+        <a href="https://drkautopads.com/">
+                <Text
+                  mt={"5px"}
+                  fontSize={"18px"}
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  color={"#08d6a0"}
+                >
+                   AUTOPARTS STORE   <FaExternalLinkAlt />
+                </Text>
+              </a>
+
+
+            </Box>
           </Box>
 
           <Box
             mr={"10px"}
             minW={"300px"}
-            h={"auto"}
+            h={"250px"}
             w={"300px"}
             bg={"white"}
             borderRadius={"20px"}
@@ -625,7 +631,7 @@ export default function Testimonial() {
             position={"relative"}
           >
             <Box
-              bottom={"180px"}
+              bottom={"150px"}
               left={"245px"}
               position={"absolute"}
               zIndex={"999"}
@@ -681,12 +687,8 @@ export default function Testimonial() {
                 <Text>SEO</Text>
               </Box>
             </Box>
-            <Box
-              w={"full"}
-              height={"auto"}
-          
-              border={"1px solid #999"}
-            >
+            <Box w={"256"} height={"124"} border={"1px solid #999"}>
+
               <Image
                 src={"/pr6.png"}
                 height={"200"}
@@ -694,11 +696,11 @@ export default function Testimonial() {
                 alt="project thumbnail"
               />
             </Box>
-            <Text
-              mt={"20px"}
+            <Box
+         
               fontSize={"18px"}
               display={"flex"}
-              alignItems={"flex-end"}
+              alignItems={"center"}
             >
               <Heading
                 mr={"10px"}
@@ -711,21 +713,30 @@ export default function Testimonial() {
                   .
                 </Text>
               </Heading>
-              <Text mb={"5px"}>
-                
-               <a href="https://tradeplaceng.com/">
-                 TRADE PLACE NG
-               </a>
-               </Text>
-            </Text>
+              
+              <a href="https://tradeplaceng.com/">
+                <Text
+                  mt={"5px"}
+                  fontSize={"18px"}
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  color={"#08d6a0"}
+                >
+                  TRADE PLACE NG   <FaExternalLinkAlt />
+                </Text>
+              </a>
+
+
+
+              
+            </Box>
           </Box>
-
-
 
           <Box
             mr={"10px"}
             minW={"300px"}
-            h={"auto"}
+            h={"250px"}
             w={"300px"}
             bg={"white"}
             borderRadius={"20px"}
@@ -734,7 +745,7 @@ export default function Testimonial() {
             position={"relative"}
           >
             <Box
-              bottom={"180px"}
+              bottom={"150px"}
               left={"245px"}
               position={"absolute"}
               zIndex={"999"}
@@ -790,12 +801,8 @@ export default function Testimonial() {
                 <Text>WebHooks</Text>
               </Box>
             </Box>
-            <Box
-              w={"full"}
-              height={"auto"}
-          
-              border={"1px solid #999"}
-            >
+            <Box w={"256"} height={"124"} border={"1px solid #999"}>
+
               <Image
                 src={"/pr7.png"}
                 height={"200"}
@@ -803,11 +810,11 @@ export default function Testimonial() {
                 alt="project thumbnail"
               />
             </Box>
-            <Text
-              mt={"20px"}
+            <Box
+          
               fontSize={"18px"}
               display={"flex"}
-              alignItems={"flex-end"}
+              alignItems={"center"}
             >
               <Heading
                 mr={"10px"}
@@ -820,23 +827,29 @@ export default function Testimonial() {
                   .
                 </Text>
               </Heading>
-              <Text mb={"5px"}>
-                <a href="https://newsletter-git-main-timmyuiop88.vercel.app/">
+               <a href="https://newsletter-git-main-timmyuiop88.vercel.app/">  
+                <Text
+                  mt={"5px"}
+                  fontSize={"18px"}
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  color={"#08d6a0"}
+                >
+                    LANDING PAGE  <FaExternalLinkAlt />
+                </Text>
+              </a>
 
-                   SAAS LANDING PAGE
-                </a>
-               </Text>
-            </Text>
+
+
+            
+            </Box>
           </Box>
-
-
-
-
 
           <Box
             mr={"10px"}
             minW={"300px"}
-            h={"auto"}
+            h={"250px"}
             w={"300px"}
             bg={"white"}
             borderRadius={"20px"}
@@ -845,7 +858,7 @@ export default function Testimonial() {
             position={"relative"}
           >
             <Box
-              bottom={"180px"}
+              bottom={"150px"}
               left={"245px"}
               position={"absolute"}
               zIndex={"999"}
@@ -901,12 +914,8 @@ export default function Testimonial() {
                 <Text>Next.Js</Text>
               </Box>
             </Box>
-            <Box
-              w={"full"}
-              height={"auto"}
-          
-              border={"1px solid #999"}
-            >
+            <Box w={"256"} height={"124"} border={"1px solid #999"}>
+
               <Image
                 src={"/pr8.png"}
                 height={"200"}
@@ -914,11 +923,11 @@ export default function Testimonial() {
                 alt="project thumbnail"
               />
             </Box>
-            <Text
-              mt={"20px"}
+            <Box
+             
               fontSize={"18px"}
               display={"flex"}
-              alignItems={"flex-end"}
+              alignItems={"center"}
             >
               <Heading
                 mr={"10px"}
@@ -931,10 +940,9 @@ export default function Testimonial() {
                   .
                 </Text>
               </Heading>
-              <Text mb={"5px"}>PORTFOLIO</Text>
-            </Text>
+              <Text >PORTFOLIO</Text>
+            </Box>
           </Box>
-   
         </Box>
       </Box>
     </Box>

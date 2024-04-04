@@ -10,6 +10,7 @@ import {
   Hide,
   Show,
   Link,
+  Button,
 } from "@chakra-ui/react";
 import { AiFillTwitterCircle,AiFillLinkedin,AiFillGithub } from "react-icons/ai";
 export default function Nav(){
@@ -75,7 +76,13 @@ export default function Nav(){
 
       
 <Link href="https://www.linkedin.com/feed/" display={'flex'} >
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <Button
+  bg={'#fff'}
+  color={'#06D6A0'}
+  border={'1px solid #06D6A0'}
+  gap={'10px'}
+  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
   <mask id="mask0_8_18" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
     <rect y="0.5" width="24" height="24" fill="#D9D9D9"/>
   </mask>
@@ -83,8 +90,10 @@ export default function Nav(){
     <path d="M6 20.5C5.45 20.5 4.97933 20.3043 4.588 19.913C4.196 19.521 4 19.05 4 18.5V15.5H6V18.5H18V15.5H20V18.5C20 19.05 19.8043 19.521 19.413 19.913C19.021 20.3043 18.55 20.5 18 20.5H6ZM12 16.5L7 11.5L8.4 10.05L11 12.65V4.5H13V12.65L15.6 10.05L17 11.5L12 16.5Z" fill="#06D6A0"/>
   </g>
 </svg>
-Download Resume</Link>
-<Box ml={'10px'} display={'flex'}>
+ Resume
+  </Button>
+</Link>
+<Box gap={'5px'} ml={'10px'} display={'flex'}>
 <Link href="https://twitter.com/timmyENV">
 <AiFillTwitterCircle/>
 </Link><Link href="https://www.linkedin.com/feed/">

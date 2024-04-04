@@ -14,7 +14,7 @@ import {
 export default function Exper() {
   return (
     <>
-      <Box w={"full"} h={"500px"}>
+      <Box w={"full"} h={"500px"} pos={'relative'}>
         <Box pt={"10"}>
           <Text
             textAlign={"center"}
@@ -36,25 +36,41 @@ export default function Exper() {
           </Heading>
         </Box>
 
-        <Box>
+        <Box
+        bottom={'400'}
+        left={'0'}
+        position={'absolute'}
+        rotate={'90deg'}
+        >
+          <Image src={'/me.png'} height={'100'} width={'100'} alt="alt"/>
+        </Box>
+
+        <Box h={"auto"} w={"full"} py={"10px"}>
           <Box
-            borderBottom={"0.5px solid rgba(153, 162, 175, 0.60)"}
+            h={"100"}
             w={"full"}
-            h={"100px"}
-            px={"5%"}
+            borderBottom={"0.5px solid rgba(153, 162, 175, 0.60)"}
+            maxW={"7xl"}
+            m={"auto"}
             display={"flex"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
           >
-            <Text
-              alignItems={"center"}
+            <Box
+              h={"full"}
+              w={"50%"}
+              px={"10px"}
               display={"flex"}
-              fontSize={["70px"]}
-              fontWeight={"700"}
-              color={"#DFDFDF"}
+              alignItems={"center"}
             >
-              01
-              <Text color={"#06D6A0"}>.</Text>
+              <Text
+                alignItems={"center"}
+                display={"flex"}
+                fontSize={["70px"]}
+                fontWeight={"700"}
+                color={"#DFDFDF"}
+              >
+                01
+                <Text color={"#06D6A0"}>.</Text>
+              </Text>
               <Text
                 ml={"20px"}
                 w={"189px"}
@@ -66,35 +82,49 @@ export default function Exper() {
               >
                 FREELANCE
               </Text>
-              <Link href="https://google.com"></Link>
-            </Text>
-            <Text
-              fontSize={["18px", "18px", "25px", "25px"]}
-              fontWeight={"400"}
-              color={"#99A2AF"}
-            >
-              2021 - TILL DATE
-            </Text>
-          </Box>
-
-          <Box
-            borderBottom={"0.5px solid rgba(153, 162, 175, 0.60)"}
-            w={"full"}
-            h={"100px"}
-            px={"5%"}
-            display={"flex"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-          >
-            <Text
-              alignItems={"center"}
+            </Box>
+            <Box
+              h={"full"}
+              w={"50%"}
+              px={"10px"}
               display={"flex"}
-              fontSize={["70px"]}
-              fontWeight={"700"}
-              color={"#DFDFDF"}
+              justifyContent={"end"}
+              alignItems={"center"}
             >
-              02
-              <Text color={"#06D6A0"}>.</Text>
+              <Text
+                fontSize={["18px", "18px", "25px", "25px"]}
+                fontWeight={"400"}
+                color={"#99A2AF"}
+              >
+                2021 - TILL DATE
+              </Text>
+            </Box>
+          </Box>
+          <Box
+            h={"100"}
+            w={"full"}
+            borderBottom={"0.5px solid rgba(153, 162, 175, 0.60)"}
+            maxW={"7xl"}
+            m={"auto"}
+            display={"flex"}
+          >
+            <Box
+              h={"full"}
+              w={"50%"}
+              px={"10px"}
+              display={"flex"}
+              alignItems={"center"}
+            >
+              <Text
+                alignItems={"center"}
+                display={"flex"}
+                fontSize={["70px"]}
+                fontWeight={"700"}
+                color={"#DFDFDF"}
+              >
+                02
+                <Text color={"#06D6A0"}>.</Text>
+              </Text>
               <Text
                 ml={"20px"}
                 w={"189px"}
@@ -104,61 +134,94 @@ export default function Exper() {
                 color={"#121212"}
                 letterSpacing={"2px"}
               >
-                HNG INTERNSHIP
+               HNG INTERNSHIP
+
+
+
               </Text>
-              <Link href="https://google.com"></Link>
-            </Text>
-            <Text
-              fontSize={["18px", "18px", "25px", "25px"]}
-              fontWeight={"400"}
-              color={"#99A2AF"}
-            >
-             07/ 2023 - 09/ 2023
-            </Text>
-          </Box>
-
-
-          <Box
-            borderBottom={"0.5px solid rgba(153, 162, 175, 0.60)"}
-            w={"full"}
-            h={"100px"}
-            px={"5%"}
-            display={"flex"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-          >
-            <Text
-              alignItems={"center"}
+            </Box>
+            <Box
+              h={"full"}
+              w={"50%"}
+              px={"10px"}
               display={"flex"}
-              fontSize={["70px"]}
-              fontWeight={"700"}
-              color={"#DFDFDF"}
+              justifyContent={"end"}
+              alignItems={"center"}
             >
-              03
-              <Text color={"#06D6A0"}>.</Text>
+              <Text
+                fontSize={["18px", "18px", "25px", "25px"]}
+                fontWeight={"400"}
+                color={"#99A2AF"}
+              >
+                 07/ 2023 - 09/ 2023
+              </Text>
+            </Box>
+          </Box>
+          <Box
+            h={"100"}
+           
+            w={"full"}
+            borderBottom={"0.5px solid rgba(153, 162, 175, 0.60)"}
+            maxW={"7xl"}
+            m={"auto"}
+            display={"flex"}
+          >
+            <Box
+         
+              h={"full"}
+              w={"50%"}
+              px={"10px"}
+              display={"flex"}
+              alignItems={"center"}
+            >
+              <Text
+                alignItems={"center"}
+                display={"flex"}
+                fontSize={["70px"]}
+                fontWeight={"700"}
+                color={"#DFDFDF"}
+              >
+                03
+                <Text color={"#06D6A0"}>.</Text>
+              </Text>
               <Text
                 ml={"20px"}
-                w={"189px"}
-                fontSize={["14px", "14px", "20px", "20px"]}
+          
+                fontSize={["14px", "14px", "25px", "25px"]}
                 fontWeight={"400"}
                 lineHeight={"25px"}
                 color={"#121212"}
                 letterSpacing={"2px"}
               >
-                WEB DEVELOPER - WETIN DEY CODE ACADEMY
-              </Text>
-              <Link href="https://google.com"></Link>
-            </Text>
-            <Text
-              fontSize={["18px", "18px", "25px", "25px"]}
-              fontWeight={"400"}
-              color={"#99A2AF"}
-            >
-              02/2021 - 11/2022
-            </Text>
-          </Box>
+              WETIN DEY APP
 
+
+
+              </Text>
+            </Box>
+            <Box
+              h={"full"}
+              w={"50%"}
+              px={"10px"}
+              display={"flex"}
+              justifyContent={"end"}
+              alignItems={"center"}
+            >
+              <Text
+                fontSize={["18px", "18px", "25px", "25px"]}
+                fontWeight={"400"}
+                color={"#99A2AF"}
+
+              >
+              02/2021 - 11/2022
+
+
+              </Text>
+            </Box>
+          </Box>
         </Box>
+
+ 
       </Box>
     </>
   );
